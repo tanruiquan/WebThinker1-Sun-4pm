@@ -5,59 +5,31 @@
     <meta name="viewport" content="width=device-width">
     <link href="/script/practice.css" rel="stylesheet">
     <link href="script/bootstrap.css" rel="stylesheet">
-    <style>
-      h1 {
-        colour: red;
-      }
-    </style>
   </head>
+  <script>
+    let global_var = 25;
+
+    let fx = () => {
+      const local_var = 50;
+
+      if (local_var > global_var) {
+        let block_var = local_var + global_var; // 75
+        
+        console.log(global_var);
+        console.log(local_var);
+        console.log(block_var);
+      }
+
+      console.log(global_var);
+      console.log(local_var);
+      console.log(block_var);
+    }
+
+    console.log(global_var);
+    console.log(local_var);
+    console.log(block_var);
+  </script>
   <body>
-    <div class="row h1" id="h1">
-      <div class="col-6 border border-dark">col1</div>
-      <div class="col-6 border border-dark">col2</div>
-    </div>
-    <div class="row">
-      <div class="col-6 border border-dark">col3</div>
-      <div class="col-6 border border-dark">col4</div>
-    </div>
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr>
-          <th>
-            Subject Code
-          </th>
-          <th>
-            Subject name
-          </th>
-          <th>
-            Grade
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Data1
-          </td>
-          <td>
-            Data1
-          </td>
-          <td>
-            Data1
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Data2
-          </td>
-          <td>
-            Data2
-          </td>
-          <td>
-            Data2
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <h1>Welcome to practice.html</h1>
   </body>
 </html>
